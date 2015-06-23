@@ -63,28 +63,32 @@ compare object attributes and values rather than checking to see if they're the 
 check the first level of the container for a value like the one provided
 
     var subject = {
-      a:   'alphabet'
-      , b: 'butternut'
-      , c: {
-        name:       'chowder'
-        , attributes: [
-          'scales'
-          , 'fins'
+      a:   'alphabet',
+      b: 'butternut',
+      c: {
+        name: 'chowder',
+        attributes: [
+          'scales',
+          'fins'
         ]
-      }
-      , x: 'xylophone'
-      , z: 'xylophone'
+      },
+      x: 'xylophone',
+      z: 'xylophone'
     };
+
     subject.should.containOneLike({
-      name:         'chowder'
-      , attributes: [
+      name: 'chowder',
+      attributes: [
         'scales', 'fins'
       ]
     });
+
     subject.should.not.containOneLike({
-      name:         'chowder'
-      , attributes: [
-        'scales', 'fins', 'cream'
+      name: 'chowder',
+      attributes: [
+        'scales',
+        'fins',
+        'cream'
       ]
     });
 
@@ -104,17 +108,20 @@ check the first level of the container for a value like the one provided
 check that the given javascript object is like the JSON-ified expected value.  Useful for checking stringification and parsing of an object.
 
     var apple = {
-      skin: 'thin'
-      , colors: ['red', 'green', 'yellow']
-      , isFruit: true
-      , picked: new Date()
+      skin: 'thin', colors: ['red', 'green', 'yellow'], isFruit: true, picked: new Date()
     };
+
     var orange = {
-      skin: 'thin'
-      , colors: ['red', 'green', 'yellow']
-      , isFruit: true
-      , picked: new Date()
+      skin: 'thin',
+      colors: [
+      	'red',
+      	'green',
+      	'yellow'
+      ],
+      isFruit: true,
+      picked: new Date()
     };
+
     // here appleJSON would be the json result of some process like a JSON api
     var appleJSON  = JSON.parse(JSON.stringify(apple));
 
@@ -129,7 +136,4 @@ check that the given javascript object is like the JSON-ified expected value.  U
 
 # Thanks
 
-Thanks to [Davis](http://github.com/infews/ "Davis") for passing along the idea of using underscore rather than cribbing parts of jasmine.
-
-Thanks to [Bart van der Schoor](https://github.com/Bartvds "Bart van der Schoor") for adding assert-style compatibility
-
+Thanks to [Elliotf](http://github.com/elliotf/ "Elliotf") for contributing the very excellent [Chai-Fuzzy](http://github.com/elliotf/chai-fuzzy), on which this is based.
