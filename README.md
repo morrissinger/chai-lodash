@@ -14,16 +14,20 @@ Also see the [tests](https://github.com/morrissinger/chai-lodash/tree/master/tes
 
 include chai lodash after chai and lodash:
 
+```html
     <script src="lodash.js"></script>
     <script src="chai.js"></script>
     <script src="chai-lodash.js"></script>
+```
 
 ### server-side
 
 have chai use chai-lodash:
 
+```javascript
     var chai = require('chai');
     chai.use(require('chai-lodash'));
+```
 
 ## Assertions
 
@@ -32,6 +36,7 @@ have chai use chai-lodash:
 
 compare object attributes and values rather than checking to see if they're the same reference
 
+```javascript
     var subject = {a: 'a'};
     subject.should.be.like({a: 'a'});
     subject.should.not.be.like({x: 'x'});
@@ -57,11 +62,13 @@ compare object attributes and values rather than checking to see if they're the 
     assert.like(subject, ['a']);
     assert.notLike(subject, ['x']);
     assert.notLike(subject, ['a', 'b']);
+```
 
 ## containOneLike(value)
 
 check the first level of the container for a value like the one provided
 
+```javascript
     var subject = {
       a:   'alphabet',
       b: 'butternut',
@@ -102,11 +109,13 @@ check the first level of the container for a value like the one provided
     assert.notContainOneLike(subject, 'cow patties');
 
     // same for arrays
+```
 
 # jsonOf(value)
 
 check that the given javascript object is like the JSON-ified expected value.  Useful for checking stringification and parsing of an object.
 
+```javascript
     var apple = {
       skin: 'thin', colors: ['red', 'green', 'yellow'], isFruit: true, picked: new Date()
     };
@@ -133,6 +142,7 @@ check that the given javascript object is like the JSON-ified expected value.  U
 
     assert.jsonOf(appleJSON, apple);
     assert.notJsonOf(appleJSON, orange);
+```
 
 # Thanks
 
