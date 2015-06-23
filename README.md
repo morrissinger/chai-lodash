@@ -1,29 +1,29 @@
-# chai-fuzzy
+# chai-lodash
 
-Fuzzy matchers for chai based on underscore and inspired by jasmine.
+Fuzzy matchers for chai based on lodash and inspired by chai-fuzzy.
 
 Make assertions that values have all the same attributes and values without asserting strict object equality.
 
-[![Build Status](https://travis-ci.org/elliotf/chai-fuzzy.png)](https://travis-ci.org/elliotf/chai-fuzzy)
+[![Build Status](https://travis-ci.org/morrissinger/chai-lodash.png)](https://travis-ci.org/morrissinger/chai-lodash)
 
 ## Using
 
-Also see the [tests](https://github.com/elliotf/chai-fuzzy/tree/master/test/) and [examples](https://github.com/elliotf/chai-fuzzy/tree/master/examples/).
+Also see the [tests](https://github.com/morrissinger/chai-lodash/tree/master/test/) and [examples](https://github.com/elliotf/chai-lodash/tree/master/examples/).
 
 ### browser-side
 
-include chai fuzzy after chai and underscore:
+include chai lodash after chai and lodash:
 
-    <script src="underscore.js"></script>
+    <script src="lodash.js"></script>
     <script src="chai.js"></script>
-    <script src="chai-fuzzy.js"></script>
+    <script src="chai-lodash.js"></script>
 
 ### server-side
 
-have chai use chai-fuzzy:
+have chai use chai-lodash:
 
     var chai = require('chai');
-    chai.use(require('chai-fuzzy'));
+    chai.use(require('chai-lodash'));
 
 ## Assertions
 

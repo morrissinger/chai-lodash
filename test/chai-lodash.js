@@ -19,7 +19,7 @@
 	var should = chai.should();
 	var assert = chai.assert;
 
-	describe('chai-fuzzy', function() {
+	describe('chai-lodash', function() {
 
 		if (testingServer) {
 
