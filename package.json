@@ -1,10 +1,10 @@
 {
-  "name": "chai-fuzzy",
-  "version": "1.5.0",
+  "name": "chai-lodash",
+  "version": "1.0.0",
   "keywords": [
     "chai",
     "testing",
-    "jasmine"
+    "mocha"
   ],
   "description": "fuzzy matchers for chai",
   "main": "index.js",
@@ -13,17 +13,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/elliotf/chai-fuzzy.git"
+    "url": "git://github.com/morrissinger/chai-lodash.git"
   },
-  "author": "Elliot Foster",
+  "author": "Morris Singer",
   "license": "MIT",
   "devDependencies": {
-    "chai": ">=1.0.0",
-    "mocha": ">=1.0.0",
-    "underscore": ">= 1.0.0"
+    "chai": ">=3.0.0",
+    "mocha": ">=2.2.0",
+    "lodash": ">= 3.9.0"
   },
   "peerDependencies": {
-    "chai": ">= 1.0.0"
+    "chai": ">= 3.0.0"
   },
   "engines": {
     "npm": ">= 1.2"
