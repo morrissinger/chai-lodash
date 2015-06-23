@@ -20,7 +20,7 @@
 }(function(chai, utils){
 	var _;
 
-	if (typeof window === 'object' && typeof window._ === 'object') {
+	if (typeof window === 'object' && typeof window._ === 'function') {
 		// browser-side
 		_ = window._;
 	} else {
