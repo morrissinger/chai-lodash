@@ -8,7 +8,7 @@ Make assertions that values have all the same attributes and values without asse
 
 ## Using
 
-Also see the [tests](https://github.com/morrissinger/chai-lodash/tree/master/test/) and [examples](https://github.com/elliotf/chai-lodash/tree/master/examples/).
+Also see the [tests](https://github.com/morrissinger/chai-lodash/tree/master/test/) and [examples](https://github.com/morrissinger/chai-lodash/tree/master/examples/).
 
 ### browser-side
 
