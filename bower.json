@@ -1,0 +1,22 @@
+{
+  "name": "chai-lodash",
+  "main": "index.js",
+  "version": "1.0.6",
+  "homepage": "https://github.com/morrissinger/chai-lodash",
+  "authors": [
+    "Morris Singer <morrissinger@gmail.com>"
+  ],
+  "description": "Fuzzy matchers for chai based on lodash and inspired by chai-fuzzy.",
+  "keywords": [
+    "chai",
+    "lodash"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
